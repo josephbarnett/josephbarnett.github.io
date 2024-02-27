@@ -14,7 +14,7 @@ export default defineConfig({
   },
   build: {
     sourcemap: false, // Disable sourcemap for production
-    outDir: 'site'    // Set the output directory to 'site to serve in github pages'
+    outDir: 'docs'    // Set the output directory to 'docs to serve in github pages'
   },
   server: {
     port: 3000,
