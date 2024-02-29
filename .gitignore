@@ -31,6 +31,3 @@ coverage
 
 test-results/
 playwright-report/
-
-# Don't check in the lock file (yet)
-package-lock.json
