@@ -13,18 +13,5 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
   },
-  build: {
-    sourcemap: false, // Disable sourcemap for production
-    outDir: 'docs'    // Set the output directory to 'site to serve in github pages'
-  },
-  server: {
-    port: 3000,
-    proxy: {
-      '/api': {
-        target: 'http://localhost:8001',
-        changeOrigin: true,
-        rewrite: path => path.replace(/^\/api/, '')
-      }
-    }
-  }
+  base: '/',
 })
