@@ -21,6 +21,11 @@
               <router-link to="/" class="nav-link">Home</router-link>
             </li>
           </ul>
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a href="https://codeblind.ai/docs" target="_blank" rel="noopener noreferrer" class="nav-link">Documentation</a>
+            </li>
+          </ul>
           <ul class="navbar-nav d-none d-md-block">
             <li v-if="!isAuthenticated && !isLoading" class="nav-item">
               <button
