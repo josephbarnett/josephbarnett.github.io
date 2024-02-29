@@ -21,11 +21,6 @@
               <router-link to="/" class="nav-link">Home</router-link>
             </li>
           </ul>
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a href="https://codeblind.ai/docs" target="_blank" rel="noopener noreferrer" class="nav-link">Documentation</a>
-            </li>
-          </ul>
           <ul class="navbar-nav d-none d-md-block">
             <li v-if="!isAuthenticated && !isLoading" class="nav-item">
               <button
@@ -54,6 +49,9 @@
                 <router-link to="/profile" class="dropdown-item dropdown-profile">
                   <font-awesome-icon class="mr-3" icon="user" />Profile
                 </router-link>
+                <a href="https://codeblind.ai/docs" target="_blank" rel="noopener noreferrer" class="dropdown-item">
+                  <font-awesome-icon class="mr-3" icon="book" />Documentation
+                </a>
                 <a id="qsLogoutBtn" href="#" class="dropdown-item" @click.prevent="logout">
                   <font-awesome-icon class="mr-3" icon="power-off" />Log out
                 </a>
@@ -123,10 +121,3 @@ export default {
   }
 };
 </script>
-
-<style>
-#mobileAuthNavBar {
-  min-height: 125px;
-  justify-content: space-between;
-}
-</style>
