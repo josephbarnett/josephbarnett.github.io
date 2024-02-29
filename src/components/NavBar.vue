@@ -52,6 +52,9 @@
                 <a href="https://codeblind.ai/docs" target="_blank" rel="noopener noreferrer" class="dropdown-item">
                   <font-awesome-icon class="mr-3" icon="book" />Documentation
                 </a>
+                <a href="https://codeblind.ai/blog" target="_blank" rel="noopener noreferrer" class="dropdown-item">
+                  <font-awesome-icon class="mr-3" icon="lightbulb" />Blog
+                </a>
                 <a id="qsLogoutBtn" href="#" class="dropdown-item" @click.prevent="logout">
                   <font-awesome-icon class="mr-3" icon="power-off" />Log out
                 </a>
