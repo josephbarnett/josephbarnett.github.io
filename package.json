@@ -39,7 +39,7 @@
     "vite": "^5.0.11",
     "vitest": "^1.2.2",
     "@vue/compiler-sfc": "^3.3.4",
-    "typescript": "^5.3.3"
+    "typescript": "^5.4.2"
   },
   "prettier": {
     "singleQuote": false,
